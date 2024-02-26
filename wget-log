@@ -1,0 +1,6 @@
+--2024-02-19 18:57:09--  https://ams3.digitaloceanspaces.com/outfitai/media/lora_training_pictures/4031ed34-a9ec-4b63-8d00-fa5a38a6313f.zip?AWSAccessKeyId=DO009WQRW8NZR3XFQ9N3
+Resolving ams3.digitaloceanspaces.com (ams3.digitaloceanspaces.com)... 5.101.110.225
+Connecting to ams3.digitaloceanspaces.com (ams3.digitaloceanspaces.com)|5.101.110.225|:443... connected.
+HTTP request sent, awaiting response... 403 Forbidden
+2024-02-19 18:57:09 ERROR 403: Forbidden.
+
