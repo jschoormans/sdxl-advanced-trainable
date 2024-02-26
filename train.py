@@ -153,8 +153,15 @@ def train(
         substitution_tokens=list(token_dict.keys()),
     )
     
-    # create a metadata.jsonl file 
-
+    import pandas as pd
+    df = pd.read_csv(os.path.join(input_dir, "captions.csv"))
+    df = df.rename(columns={"file_name": "file_name", "caption": "prompt"})
+    df.to_json(os.path.join(input_dir, "metadata.jsonl"), orient="records", lines=True)
+    
+    # remove captions.csv
+    os.remove(os.path.join(input_dir, "captions.csv"))
+    
+    
     if os.path.exists(OUTPUT_DIR):
         shutil.rmtree(OUTPUT_DIR)
     os.makedirs(OUTPUT_DIR)
